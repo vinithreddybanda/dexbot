@@ -1,8 +1,5 @@
-[phases.setup]
-nixPkgs = ["python311"]
+[build]
+nixpacksVersion = "latest"
 
-[phases.install]
-cmds = ["pip install -r requirements.txt"]
-
-[phases.start]
-cmds = ["python dex.py"]
+[start]
+cmd = "python dex.py"
